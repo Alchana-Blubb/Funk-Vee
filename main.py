@@ -72,6 +72,7 @@ async def move_panel(ctx):
 
 
 
+with open("/etc/secrets/DC_Token") as f:
+    token = f.read().strip()
 
-# Starte den Bot (Token hier einfügen)
-bot.run(os.environ["DC_Token"])
+bot.run(token)
