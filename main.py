@@ -75,4 +75,4 @@ async def move_panel(ctx):
 with open("/etc/secrets/DC_Token") as f:
     token = f.read().strip()
 
-bot.run(token)
+bot.run(token, reconnect=True)
